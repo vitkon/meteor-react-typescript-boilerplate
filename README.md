@@ -1,6 +1,5 @@
-# Meteor React Typescript boilerplate
-
-This slightly opinionated boilerplate / starter package will allow you to move straight into coding in Meteor.
+# Meteor + React + Typescript = ❤️
+This slightly opinionated boilerplate / starter app will allow you to move straight into coding a statically typed Meteor app with React views.
 
 ## What's inside
 - Meteor v1.4
@@ -23,3 +22,6 @@ This slightly opinionated boilerplate / starter package will allow you to move s
   `npm install` or `yarn install`
 - **Run meteor**
   `meteor`
+  
+  ## Testing
+  - `npm test`
