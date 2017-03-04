@@ -148,7 +148,7 @@ declare module "meteor/random" {
 
 declare module "meteor/meteor" {
   import { Blaze } from "meteor/blaze";
-  
+
   export module Meteor {
     /** Start definitions for Template **/
     interface Event {
@@ -934,4 +934,18 @@ declare function getExtension(): String;
 
 declare module "meteor/react-meteor-data" {
   export var createContainer: any;
+}
+
+declare module "meteor/alanning:roles" {
+  export module Roles {
+    function createRole(roleName: string): string;
+    function deleteRole(roleName: string): void;
+    function addUsersToRoles(users: any, roles: any, groups?: string): void;
+    function removeUsersFromRoles(users: any, roles: any): void;
+    function userIsInRole(user: any, roles: any): boolean;  //user can be user ID or user object
+    function getRolesForUser(userId: string): string[];
+    function getAllRoles(): Mongo.Cursor<RolesDAO>;
+    function getUsersInRole(roleName: string): Mongo.Cursor<RolesDAO>;
+    var GLOBAL_GROUP: string;
+  }
 }

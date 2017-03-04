@@ -1,8 +1,9 @@
 import * as React from 'react';
 
 import Task from '../components/Task';
+import Login from '../components/Login/Login';
 
-export default props => (
+const TasksLayout = props => (
   <div className="container">
     <header>
       <h1>Todo List</h1>
@@ -10,8 +11,11 @@ export default props => (
 
     <ul>
       {props.tasks.map(task => (
-        <Task key={task._id} task={task} />
+        <Task task={task} key={task._id} />
       ))}
     </ul>
+    <Login />
   </div>
 );
+
+export default TasksLayout;

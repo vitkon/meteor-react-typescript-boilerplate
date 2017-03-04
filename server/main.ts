@@ -1,7 +1,22 @@
 import { Meteor } from 'meteor/meteor';
+import { Accounts } from 'meteor/accounts-base';
+import { Roles } from 'meteor/alanning:roles';
 
 import '../imports/api/tasks';
 
 Meteor.startup(() => {
-  // code to run on server at startup
+  const adminUser = Meteor.users.findOne({ username: 'admin' });
+  if (!adminUser) {
+    console.warn('WARNING: Creating default admin user. Log in as \'admin@example.org\' with password \'secret\' and change the password!');
+
+    const userId = Accounts.createUser({
+      username: 'admin',
+      email: 'admin@example.org',
+      password: 'secret',
+    });
+
+    console.log()
+
+    Roles.addUsersToRoles(userId, ['admin']);
+  }
 });

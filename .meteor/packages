@@ -25,3 +25,5 @@ dispatch:mocha-phantomjs
 dburles:factory
 barbatus:typescript
 fourseven:scss
+accounts-password
+alanning:roles
