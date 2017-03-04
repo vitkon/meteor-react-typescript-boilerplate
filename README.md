@@ -16,12 +16,12 @@ This slightly opinionated boilerplate / starter app will allow you to move strai
 - meteor v1.4+ `curl https://install.meteor.com/ | sh`
 
 ## Getting started
-- **Make sure you have meteor installed**  
-  `curl https://install.meteor.com/ | sh`
-- **Install dependencies**
+- **Clone the repository**  
+  `git clone https://github.com/vitkon/meteor-react-typescript-boilerplate.git`
+- **Install dependencies**  
   `npm install` or `yarn install`
-- **Run meteor**
-  `meteor`
+- **Run meteor**  
+  `meteor`
   
 ## Testing
 - `npm test`
