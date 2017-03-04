@@ -1,0 +1,25 @@
+# Meteor React Typescript boilerplate
+
+This slightly opinionated boilerplate / starter package will allow you to move straight into coding in Meteor.
+
+## What's inside
+- Meteor v1.4
+- React v15
+- Typescript v2.2
+- TSLint
+- Scss Support
+- Sass Bootstrap
+- React Bootstrap
+- Mocha tests
+
+## Required environment dependencies
+- node.js v6+
+- meteor v1.4+ `curl https://install.meteor.com/ | sh`
+
+## Getting started
+- **Make sure you have meteor installed**  
+  `curl https://install.meteor.com/ | sh`
+- **Install dependencies**
+  `npm install` or `yarn install`
+- **Run meteor**
+  `meteor`
