@@ -23,5 +23,5 @@ This slightly opinionated boilerplate / starter app will allow you to move strai
 - **Run meteor**
   `meteor`
   
-  ## Testing
-  - `npm test`
+## Testing
+- `npm test`
