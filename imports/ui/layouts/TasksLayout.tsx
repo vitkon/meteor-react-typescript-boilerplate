@@ -3,16 +3,18 @@ import * as React from 'react';
 import Task from '../components/Task';
 import Login from '../components/Login/Login';
 
-const TasksLayout = props => (
+const tasksList = (tasks) => tasks.map((task) => (
+  <Task task={task} key={task._id} />
+));
+
+const TasksLayout = (props) => (
   <div className="container">
     <header>
       <h1>Todo List</h1>
     </header>
 
     <ul>
-      {props.tasks.map(task => (
-        <Task task={task} key={task._id} />
-      ))}
+      {tasksList(props.tasks)}
     </ul>
     <Login />
   </div>

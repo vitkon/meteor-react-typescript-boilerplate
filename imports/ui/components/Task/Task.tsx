@@ -2,7 +2,7 @@ import * as React from 'react';
 
 require('./task.scss');
 
-const Task = props => (
+const Task = (props) => (
   <li className="task">
     {props.task.text}
   </li>

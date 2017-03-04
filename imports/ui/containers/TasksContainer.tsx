@@ -5,11 +5,11 @@ import { createContainer } from 'meteor/react-meteor-data';
 import { tasks } from '../../api/tasks';
 import TasksLayout from '../layouts/TasksLayout';
 
-interface tasksProps {
-    tasks: Array<any>
+interface ITasksProps {
+    tasks: any[];
 }
 
-export class TasksContainer extends React.Component<tasksProps, any> {
+export class TasksContainer extends React.Component<ITasksProps, any> {
   get fakeTasks() {
     return [
       { _id: 1, text: 'This is task 1' },
