@@ -1,9 +1,9 @@
-import * as React from 'react';
 import { Meteor } from 'meteor/meteor';
-import { render } from 'react-dom';
-
-import App from '../imports/ui/App';
+import { ReactRouterSSR } from 'meteor/reactrouter:react-router-ssr';
+import routes from '../imports/ui/routes';
 
 Meteor.startup(() => {
-  render(<App />, document.getElementById('render-target'));
+  ReactRouterSSR.Run(
+    routes,
+  );
 });

@@ -949,3 +949,9 @@ declare module "meteor/alanning:roles" {
     var GLOBAL_GROUP: string;
   }
 }
+
+declare module "meteor/reactrouter:react-router-ssr" {
+  export module ReactRouterSSR {
+    function Run(routes: any): any;
+  }
+}

@@ -18,6 +18,7 @@ caching-compiler@1.1.9
 caching-html-compiler@1.1.0
 callback-hook@1.0.10
 check@1.2.5
+chuangbo:cookie@1.1.0
 coffeescript@1.0.17
 dburles:factory@1.1.0
 ddp@1.2.5
@@ -50,6 +51,10 @@ localstorage@1.0.12
 logging@1.1.17
 meteor@1.6.1
 meteor-base@1.0.4
+meteorhacks:fast-render@2.16.0
+meteorhacks:inject-data@2.0.0
+meteorhacks:meteorx@1.4.1
+meteorhacks:picker@1.0.3
 minifier-css@1.2.16
 minifier-js@1.2.18
 minimongo@1.0.20
@@ -73,6 +78,7 @@ random@1.0.10
 rate-limit@1.0.6
 react-meteor-data@0.2.9
 reactive-var@1.0.11
+reactrouter:react-router-ssr@3.1.6
 reload@1.1.11
 retry@1.0.9
 routepolicy@1.0.12

@@ -7,14 +7,14 @@ const tasksList = (tasks) => tasks.map((task) => (
   <Task task={task} key={task._id} />
 ));
 
-const TasksLayout = (props) => (
+const TasksLayout = ({tasks}) => (
   <div className="container">
     <header>
       <h1>Todo List</h1>
     </header>
 
     <ul>
-      {tasksList(props.tasks)}
+      {tasksList(tasks)}
     </ul>
     <Login />
   </div>
